@@ -1,0 +1,8 @@
+c = 0
+sal = float(input('Informe o seu salário Carlos: '))
+jsal = sal/3
+while jsal != sal:
+  sal = sal * (sal * 2/100)
+  jsal = jsal * (jsal * 5/100)
+  c+=1
+print(f'Levaram {c} meses para o salário de João ultrapassar o de Carlos')
