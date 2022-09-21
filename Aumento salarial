@@ -1,0 +1,10 @@
+c = 2000
+s = 1000
+a = 0.015
+for c in range (2000,2018):
+    if c == 2001:
+        s = s + s * a
+    if c >= 2002:
+        s = s + s * (a*2)
+    print(f"O salário do ano {c} é de R${s:.2f}")
+    c+=1
