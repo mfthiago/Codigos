@@ -1,0 +1,23 @@
+i = int(input('Informe sua idade: '))
+p = float(input('Informe seu peso: '))
+if i<20:
+    if p<60:
+        print("Você pertence ao grupo 9")
+    elif p<=90:
+        print("Você pertence ao grupo 8")
+    elif p>90:
+        print("Você pertence ao grupo 7")
+elif i<=50:
+    if p<60:
+        print("Você pertence ao grupo 6")
+    elif p<=90:
+        print("Você pertence ao grupo 5")
+    elif p>90:
+        print("Você pertence ao grupo 4")
+elif i>50:
+    if p<60:
+        print("Você pertence ao grupo 3")
+    elif p<=90:
+        print("Você pertence ao grupo 2")
+    elif p>90:
+        print("Você pertence ao grupo 1")
