@@ -1,0 +1,45 @@
+\\ Empresa com 10 Funcionários (While) \\
+
+
+t = input("[M]Matutino\n[V]Vespertino\n[N]Noturno\n Informe o turno em que você trabalha: ").strip().upper()[0]
+
+
+if t not in 'M,V,N':
+    while True:
+        t = input("Esse turno não é válido, escolha novamente: ").strip().upper()[0]
+        if t == 'M,V,N':
+            break
+
+
+c = input("[O]Operário\n[G]Gerente\n Informe seu cargo: ").strip().upper()[0]
+if c not in 'O,G':
+    while True:
+        c = input("Esse cargo não é válido, escolha novamente: ").strip().upper()[0]
+        if c == 'O, G':
+            break
+
+h = int(input("Informe o número de horas trabalhadas: "))
+
+if c == 'G' and t == 'N':
+    vh = (450 * 18/100)
+elif c == 'G' and t == 'M' or 'V':
+    vh = (450 * 15/100)
+elif c == 'O' and t == 'N':
+    vh = (450 * 13/100)
+elif c == 'O' and t == 'M' or 'V':
+    vh = (450 * 10/100)
+
+si = h * vh
+
+if si<300:
+    aa = (si * 20/100)
+elif si<=600:
+    aa = (si * 15/100)
+elif si>600:
+    aa = (si * 5/100)
+
+s = si + aa
+
+print(f"O seu cargo é {c}\n O seu turno é {t}.\n Você trabalhou {h} horas.\n "
+      f"O valor das horas trabalhadas é R${vh}.\n Seu salário inicial é R${si}.\n"
+      f"O seu auxílio alimentação é R${aa}.\n Seu salário final é R${s}.\n")
