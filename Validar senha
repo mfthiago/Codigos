@@ -1,0 +1,7 @@
+while True:
+    s = int(input("Digite a senha: "))
+    print("Acesso negado.")
+    if s == 1234:
+        break
+
+print("Acesso Permitido.")
