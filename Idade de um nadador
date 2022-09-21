@@ -1,0 +1,13 @@
+i = int(input("Informe a sua idade: "))
+if i<=7:
+    print("Você pertence a categoria infantil")
+elif i<=10:
+    print("Você pertence à categoria juvenil")
+elif i<=15:
+    print("Você pertence a à categoria adollescente")
+elif i<=30:
+    print("Você pertence à categoria adulta ")
+elif i>30:
+    print("Você pertence à categoria sênior")
+elif i<5:
+    print("Você ainda não tem idade para pertencer à alguma categoria")
