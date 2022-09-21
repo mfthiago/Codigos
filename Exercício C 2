@@ -1,0 +1,53 @@
+\\ Escreva um algoritmo que leia dois números e efetue a adição dos mesmos. 
+Caso o valor somado seja menor que 20, este deverá ser apresentado somando-se a ele mais 8; caso o valor somado seja igual ou maior que 20, 
+este deverá ser apresentado subtraindo-se 5.\\
+
+#include <stdio.h>
+
+
+
+int main(void) {
+
+
+
+int n1, n2, s ;
+
+
+
+printf("Informe o 1° número: \n");
+
+scanf("%d", &n1);
+
+
+
+printf("Informe o 2° número: \n");
+
+scanf("%d", &n2);
+
+
+
+s = n1+n2;
+
+
+
+if (s<20){
+
+s = s + 8;
+
+printf("%d", s);
+
+}
+
+if (s>=20){
+
+s = s - 5;
+
+printf("%d",s);
+
+}
+
+
+
+return 0;
+
+}
