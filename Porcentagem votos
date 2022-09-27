@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+
+  float vn, pvn, vb, pvb, vv, pvv, e;
+  printf("Informe o número de votos nulos: ");
+  scanf("%f", &vn);
+  printf("Informe o número de votos em branco: ");
+  scanf("%f", &vb);
+  printf("Informe o número de votos válidos: ");
+  scanf("%f", &vv);
+
+  e =vn+vb+vv;
+
+  pvn = ((vn/100)* e);
+  pvb = ((vb/100)* e);
+  pvv = ((vv/100)* e);
+
+  printf("A porcentagem de votos nulos foi %.f%\nVotos brancos %.f%\nVotos válidos %.f%\nDe %.f eleitores.",pvn,pvb,pvv,e);
+
+
+ 
+  return 0;
+}
