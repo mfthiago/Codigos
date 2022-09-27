@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+
+  int n;
+
+  printf("Digite um número.\nQuando terminar digite 0: ");
+
+  while(n!=0){
+    printf("Digite um número: ");
+    scanf("%d", &n);
+    if (n == 0){
+      exit(0);
+    }
+      if (n%2 == 0){
+        printf("O número %d é par! ", n);
+      } else{
+        printf("O número %d é ímpar! ", n);
+      }
+  }
+ 
+  return 0;
+}
