@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+
+  int gi, gg;
+
+  printf("Quantos gols o Grêmio marcou: ");
+  scanf("%d", &gg);
+  printf("Quantos gols o Inter marcou: ");
+  scanf("%d", &gi);
+
+  if (gi>gg){
+    printf("O Inter foi o vencedor! ");
+  }
+  if (gg>gi){
+    printf("O Grêmio foi o vencedor! ");
+  }
+  if (gg==gi) {
+    printf("Houve um empate! ");
+  }
+
+ 
+  return 0;
+}
+
