@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+
+  float  p, n, d=1;
+
+  printf("Digite um número para calcular a progressão: ");
+  scanf("%f", &n);
+  p =1/d;
+  while (d != n){
+    d++;
+    p+=(1/d);
+  }
+  printf("O resultado da progressão é: %f", p);
+  return 0;
+}
