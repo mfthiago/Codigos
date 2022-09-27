@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+int i=0, n;
+ 
+  printf("Quantas vezes deseja lançar o dado? ");
+  scanf("%d", &n);
+
+  while(i!=n){
+    printf("O número sorteado foi %d !\n", 1+(rand()%7) );
+  }
+ 
+  return 0;
+}
