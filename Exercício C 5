@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+
+  int vet1[5], vet2[5], i;
+
+  for (i=0;i<5;i++){
+    printf("Digite o %d° valor: ",i+1);
+    scanf("%d", &vet1[i]);
+    vet2[i] = vet1[i] * 2;
+  }
+  for (i=0;i<5;i++){
+    printf("%d\n",vet2[i]);
+  }
+  return 0;
+}
