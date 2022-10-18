@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+
+  int i;
+  float vet[10], s=0, m=0;
+
+    for (i=0;i<10;i++){
+      printf("Informe o %d° valor: ", i+1);
+      scanf("%f", &vet[i]);
+      s += vet[i];
+    }
+    m = s/10;
+    printf("Números maiores ou iguais a média %.2f : ",m);
+    for (i=0;i<10;i++){
+      if(vet[i] >= m){
+        printf("%.2f", vet[i]);
+      }
+    }
+
+  
+  
+  return 0;
+}
