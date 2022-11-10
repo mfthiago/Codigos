@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+
+  int mat[4][4], soma=0, i, j;
+
+  for(i=0;i<4;i++){
+    for(j=0;j<4;j++){
+      printf("Informe o valor da matriz: ");
+      scanf("%d", &mat[i][j]);
+    }
+  }
+  for(i=0;i<2;i++){
+    for(j=0;j<2;j++){
+      soma = soma + mat[i][j];
+    }
+  }
+  printf("A soma dos elementos é: %d", soma);
+  
+  
+  return 0;
+}
